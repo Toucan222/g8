@@ -1,0 +1,59 @@
+/* 
+  _theme.scss
+  This file contains our Gen Z–friendly colors & typography settings.
+*/
+
+/* 
+  1. Google Fonts (importing "Poppins" as primary, "Open Sans" as fallback)
+   - If you prefer to add <link> tags in index.html, you can remove these @imports.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap');
+
+/* 
+  2. Color Variables
+  - We keep a bright palette for that fun Gen Z vibe.
+  - Also included "dark" variants if you later implement a dark mode.
+*/
+$color-primary: #7b3fe4;   /* Vibrant purple */
+$color-accent:  #ff4cc5;   /* Bright pink */
+$color-bg:      #ffffff;   /* White background */
+$color-bg-dark: #121212;   /* Dark background */
+$color-text:    #111111;   /* Near-black for normal text */
+$color-text-dark: #ffffff; /* White text on dark backgrounds */
+
+/* 
+  3. Typography
+  - We'll define some SCSS mixins/classes for headings & body text.
+*/
+html, body {
+  font-family: 'Poppins', 'Open Sans', sans-serif;
+  color: $color-text;
+  background-color: $color-bg;
+  margin: 0;
+  padding: 0;
+}
+
+/* Example heading style */
+.heading-lg {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+/* Example body text style */
+.body-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+/* 
+  4. Optional Dark Mode Variables 
+  (We won't implement the toggle yet, but they're here for future use.)
+*/
+.dark-mode {
+  background-color: $color-bg-dark;
+  color: $color-text-dark;
+}

@@ -1,0 +1,11 @@
+:root {
+  --pastel-blue: #a8d8ea;
+  --pastel-pink: #ffb6c1;
+  --pastel-green: #c1e1c1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
